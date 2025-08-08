@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    justify-content: end;
+   /* justify-content: start; 
+    justify-content: center; 
+    justify-content: space-between; 
+    align-items: center; */
+    flex-direction: row;
+}
+.flex-container a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+        height: auto
+    }
+    
+    div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Styling of the hero section starts */
+.hero{
+    background-image: url("https://www.w3schools.com/w3images/forestbridge.jpg");
+    height: 500px;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+ .hero h1 {
+    font-size: 50px;
+    text-align: center;
+} */
+
+.hero p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+/* Styling of the hero section Ends */
+
+/* About styles with 2 diffrent sections */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.about-img {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.about-content {
+    flex: 2;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin: 40px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+   .about{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+/* About styles Ends */
+
+/* Services styles */
+footer{
+    background-color: darkseagreen;
+}
+.service-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: bolder;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;;
+}
+.service-1 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.service-1 p {
+    font-size: 18px;
+    
+}   
