@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+
+}
+header {
+    height: 120px;
+    border: 5px solid peru;
+    clear: both;
+}
+section {
+    height: 500px;
+    border: 5px solid peru;
+    float: left;
+}
+.section-1 {
+    width: 25%;
+}
+.section-2 {
+    width: 25%;
+}
+.section-5 {
+    width: 33.3%;
+
+}
+header, ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 20px;
+   text-align: left;
+   
+
+
+}
+ul li{
+    text-decoration: none;
+    color: red;
+    margin: 20px;
+}
+img {
+    height: 70px;
+    align-self: flex-start;
+}
+footer {
+    height: 350px;
+
+}
